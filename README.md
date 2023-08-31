@@ -16,7 +16,7 @@
 - [📝 License](#license)
 
 
-# 📖 Leaderboard <a name="about-project"></a>
+# 📖 Mohammad Yaser Safi <a name="about-project"></a>
 <br>
 <br>
 The Leaderboard Project, created solely by me, showcases my skills in JavaScript ES6, HTML, CSS, and my ability to use Webpack for an efficient development workflow. This web-page demonstrates a simple, user-friendly Leaderboard management system, allowing users to add, complete, and remove tasks dynamically. The project highlights my commitment to continuous learning and independent web development.
