@@ -52,7 +52,7 @@ To get a local copy up and running, follow these steps:
 <br>
 - Choose a directory
 - Open a Terminal
-- write git clone https://github.com/MohammadYaser/To-do-List.git
+- write git clone https://github.com/MohammadYaser/Leaderboard-App.git
 - get into to directory "Capstone Project"
 - write: npm install
 
@@ -86,7 +86,7 @@ To get a local copy up and running, follow these steps:
 ## 🤝 Contributing <a name="contributing"></a>Contributions, issues, and feature requests are welcome!
 <br>
 
-Feel free to check the [issues page](https://github.com/MohammadYaser/To-do-List/issues).
+Feel free to check the [issues page](https://github.com/MohammadYaser/Leaderboard-App/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -98,7 +98,7 @@ Feel free to check the [issues page](https://github.com/MohammadYaser/To-do-List
 If you like my page please show your support and give this page a star!
 <br>
 <br>
-[![Star](https://img.shields.io/github/stars/MohammadYaser/To-do-List?style=social)](https://github.com/MohammadYaser/To-do-List)
+[![Star](https://img.shields.io/github/stars/MohammadYaser/Leaderboard-App?style=social)](https://github.com/MohammadYaser/Leaderboard-App)
 
 
 
