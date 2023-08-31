@@ -59,14 +59,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `* {
   width: 30%;
   margin-top: 10%;
   display: grid;
-  grid-row: 1fr 1fr 1fr;
   gap: 5%;
 }
 
 #add-btn {
   width: 50px;
   margin-left: 73%;
-}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,sBAAA;EACA,UAAA;EACA,SAAA;AACF;;AAEA;EACE,WAAA;EACA,aAAA;EACA,gBAAA;EACA,aAAA;EACA,8BAAA;AACF;;AAEA;EACE,aAAA;EACA,8BAAA;EACA,eAAA;AACF;;AAEA;EACE,UAAA;AACF;;AAEA;EACE,gBAAA;EACA,uBAAA;EACA,gBAAA;AACF;;AAEA;EACE,oCAAA,EAAA,QAAA;AACF;;AAEA;EACE,UAAA;EACA,eAAA;EACA,aAAA;EACA,qBAAA;EACA,OAAA;AACF;;AAEA;EACE,WAAA;EACA,gBAAA;AACF","sourcesContent":["* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n}\n\n.container {\n  width: 100%;\n  margin: 5% 5%;\n  padding-left: 5%;\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n}\n\n.card-header {\n  display: grid;\n  grid-template-columns: 2fr 1fr;\n  margin-top: 16%;\n}\n\n.card {\n  width: 40%;\n}\n\n.score-list {\n  list-style: none;\n  border: 2px solid black;\n  margin-top: 17px;\n}\n\n.score-list li:nth-child(even) {\n  background-color: rgb(207, 229, 247); /* Red */\n}\n\n.add-new {\n  width: 30%;\n  margin-top: 10%;\n  display: grid;\n  grid-row: 1fr 1fr 1fr;\n  gap: 5%;\n}\n\n#add-btn {\n  width: 50px;\n  margin-left: 73%;\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,sBAAA;EACA,UAAA;EACA,SAAA;AACF;;AAEA;EACE,WAAA;EACA,aAAA;EACA,gBAAA;EACA,aAAA;EACA,8BAAA;AACF;;AAEA;EACE,aAAA;EACA,8BAAA;EACA,eAAA;AACF;;AAEA;EACE,UAAA;AACF;;AAEA;EACE,gBAAA;EACA,uBAAA;EACA,gBAAA;AACF;;AAEA;EACE,oCAAA,EAAA,QAAA;AACF;;AAEA;EACE,UAAA;EACA,eAAA;EACA,aAAA;EACA,OAAA;AACF;;AAEA;EACE,WAAA;EACA,gBAAA;AACF","sourcesContent":["* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n}\n\n.container {\n  width: 100%;\n  margin: 5% 5%;\n  padding-left: 5%;\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n}\n\n.card-header {\n  display: grid;\n  grid-template-columns: 2fr 1fr;\n  margin-top: 16%;\n}\n\n.card {\n  width: 40%;\n}\n\n.score-list {\n  list-style: none;\n  border: 2px solid black;\n  margin-top: 17px;\n}\n\n.score-list li:nth-child(even) {\n  background-color: rgb(207, 229, 247); /* Red */\n}\n\n.add-new {\n  width: 30%;\n  margin-top: 10%;\n  display: grid;\n  gap: 5%;\n}\n\n#add-btn {\n  width: 50px;\n  margin-left: 73%;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -594,7 +593,6 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-
 
 
 })();
