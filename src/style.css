@@ -1,0 +1,27 @@
+header,
+footer {
+  background-color: #007bff;
+}
+
+.main-card {
+  margin-top: 4%;
+  margin-left: 3%;
+}
+
+.score-list {
+  list-style: none;
+  border: 2px solid black;
+  margin-top: 17px;
+}
+
+.score-list li {
+  margin-left: -30px;
+}
+
+.score-list li:nth-child(even) {
+  background-color: rgb(207, 229, 247); /* Red */
+}
+
+footer {
+  text-align: center;
+}
