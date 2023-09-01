@@ -21,64 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-.container {
-  margin: 5% 5%;
-  padding-left: 5%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.card-header {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  margin-top: 16%;
-}
-
-.card {
-  width: 40%;
-}
-
-.score-list {
-  list-style: none;
-  border: 2px solid black;
-  margin-top: 17px;
-}
-
-.score-list li:nth-child(even) {
-  background-color: rgb(207, 229, 247); /* Red */
-}
-
-.add-new {
-  width: 30%;
-  margin-top: 10%;
-}
-
-#add-btn {
-  width: 50px;
-  margin-left: 73%;
-}
-
-#my-form {
-  margin-top: 5%;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 15%;
-}
-
-footer {
-  border: 2px solid black;
-  background-color: aqua;
-  padding: 0.2em;
-  position: fixed;
-  bottom: 0.4em;
-  width: 100%;
-}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,sBAAA;EACA,UAAA;EACA,SAAA;AACF;;AAEA;EACE,aAAA;EACA,gBAAA;EACA,aAAA;EACA,8BAAA;AACF;;AAEA;EACE,aAAA;EACA,8BAAA;EACA,eAAA;AACF;;AAEA;EACE,UAAA;AACF;;AAEA;EACE,gBAAA;EACA,uBAAA;EACA,gBAAA;AACF;;AAEA;EACE,oCAAA,EAAA,QAAA;AACF;;AAEA;EACE,UAAA;EACA,eAAA;AACF;;AAEA;EACE,WAAA;EACA,gBAAA;AACF;;AACA;EACE,cAAA;EACA,aAAA;EACA,2BAAA;EACA,QAAA;AAEF;;AAAA;EACE,uBAAA;EACA,sBAAA;EACA,cAAA;EACA,eAAA;EACA,aAAA;EACA,WAAA;AAGF","sourcesContent":["* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n}\n\n.container {\n  margin: 5% 5%;\n  padding-left: 5%;\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n}\n\n.card-header {\n  display: grid;\n  grid-template-columns: 2fr 1fr;\n  margin-top: 16%;\n}\n\n.card {\n  width: 40%;\n}\n\n.score-list {\n  list-style: none;\n  border: 2px solid black;\n  margin-top: 17px;\n}\n\n.score-list li:nth-child(even) {\n  background-color: rgb(207, 229, 247); /* Red */\n}\n\n.add-new {\n  width: 30%;\n  margin-top: 10%;\n}\n\n#add-btn {\n  width: 50px;\n  margin-left: 73%;\n}\n#my-form {\n  margin-top: 5%;\n  display: grid;\n  grid-template-rows: 1fr 1fr;\n  gap: 15%;\n}\nfooter {\n  border: 2px solid black;\n  background-color: aqua;\n  padding: 0.2em;\n  position: fixed;\n  bottom: 0.4em;\n  width: 100%;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
