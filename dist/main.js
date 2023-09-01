@@ -28,7 +28,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `* {
 }
 
 .container {
-  width: 100%;
   margin: 5% 5%;
   padding-left: 5%;
   display: grid;
@@ -58,14 +57,28 @@ ___CSS_LOADER_EXPORT___.push([module.id, `* {
 .add-new {
   width: 30%;
   margin-top: 10%;
-  display: grid;
-  gap: 5%;
 }
 
 #add-btn {
   width: 50px;
   margin-left: 73%;
-}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,sBAAA;EACA,UAAA;EACA,SAAA;AACF;;AAEA;EACE,WAAA;EACA,aAAA;EACA,gBAAA;EACA,aAAA;EACA,8BAAA;AACF;;AAEA;EACE,aAAA;EACA,8BAAA;EACA,eAAA;AACF;;AAEA;EACE,UAAA;AACF;;AAEA;EACE,gBAAA;EACA,uBAAA;EACA,gBAAA;AACF;;AAEA;EACE,oCAAA,EAAA,QAAA;AACF;;AAEA;EACE,UAAA;EACA,eAAA;EACA,aAAA;EACA,OAAA;AACF;;AAEA;EACE,WAAA;EACA,gBAAA;AACF","sourcesContent":["* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n}\n\n.container {\n  width: 100%;\n  margin: 5% 5%;\n  padding-left: 5%;\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n}\n\n.card-header {\n  display: grid;\n  grid-template-columns: 2fr 1fr;\n  margin-top: 16%;\n}\n\n.card {\n  width: 40%;\n}\n\n.score-list {\n  list-style: none;\n  border: 2px solid black;\n  margin-top: 17px;\n}\n\n.score-list li:nth-child(even) {\n  background-color: rgb(207, 229, 247); /* Red */\n}\n\n.add-new {\n  width: 30%;\n  margin-top: 10%;\n  display: grid;\n  gap: 5%;\n}\n\n#add-btn {\n  width: 50px;\n  margin-left: 73%;\n}\n"],"sourceRoot":""}]);
+}
+
+#my-form {
+  margin-top: 5%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 15%;
+}
+
+footer {
+  border: 2px solid black;
+  background-color: aqua;
+  padding: 0.2em;
+  position: fixed;
+  bottom: 0.4em;
+  width: 100%;
+}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,sBAAA;EACA,UAAA;EACA,SAAA;AACF;;AAEA;EACE,aAAA;EACA,gBAAA;EACA,aAAA;EACA,8BAAA;AACF;;AAEA;EACE,aAAA;EACA,8BAAA;EACA,eAAA;AACF;;AAEA;EACE,UAAA;AACF;;AAEA;EACE,gBAAA;EACA,uBAAA;EACA,gBAAA;AACF;;AAEA;EACE,oCAAA,EAAA,QAAA;AACF;;AAEA;EACE,UAAA;EACA,eAAA;AACF;;AAEA;EACE,WAAA;EACA,gBAAA;AACF;;AACA;EACE,cAAA;EACA,aAAA;EACA,2BAAA;EACA,QAAA;AAEF;;AAAA;EACE,uBAAA;EACA,sBAAA;EACA,cAAA;EACA,eAAA;EACA,aAAA;EACA,WAAA;AAGF","sourcesContent":["* {\n  box-sizing: border-box;\n  padding: 0;\n  margin: 0;\n}\n\n.container {\n  margin: 5% 5%;\n  padding-left: 5%;\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n}\n\n.card-header {\n  display: grid;\n  grid-template-columns: 2fr 1fr;\n  margin-top: 16%;\n}\n\n.card {\n  width: 40%;\n}\n\n.score-list {\n  list-style: none;\n  border: 2px solid black;\n  margin-top: 17px;\n}\n\n.score-list li:nth-child(even) {\n  background-color: rgb(207, 229, 247); /* Red */\n}\n\n.add-new {\n  width: 30%;\n  margin-top: 10%;\n}\n\n#add-btn {\n  width: 50px;\n  margin-left: 73%;\n}\n#my-form {\n  margin-top: 5%;\n  display: grid;\n  grid-template-rows: 1fr 1fr;\n  gap: 15%;\n}\nfooter {\n  border: 2px solid black;\n  background-color: aqua;\n  padding: 0.2em;\n  position: fixed;\n  bottom: 0.4em;\n  width: 100%;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -510,6 +523,44 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/script.js":
+/*!***********************!*\
+  !*** ./src/script.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   addToList: () => (/* binding */ addToList),
+/* harmony export */   showScores: () => (/* binding */ showScores)
+/* harmony export */ });
+const scoreList = document.querySelector('#score-list');
+
+const addToList = async (score) => {
+  await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/8De87jAi3jjs/scores/', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(score),
+  });
+};
+
+const showScores = (scores) => {
+  scoreList.innerHTML = '';
+  scores.forEach((score) => {
+    const listItem = document.createElement('li');
+    listItem.textContent = `${score.user}: ${score.score}`;
+    listItem.classList.add('list');
+    scoreList.appendChild(listItem);
+  });
+};
+
+
+
+
 /***/ })
 
 /******/ 	});
@@ -593,7 +644,41 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony import */ var _script_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./script.js */ "./src/script.js");
 
+ // Import everything from script.js
+
+const myForm = document.querySelector('#my-form');
+const nameInput = document.querySelector('#name');
+const scoreInput = document.querySelector('#point');
+const refBtn = document.querySelector('#ref-btn');
+
+const submitForm = async (event) => {
+  event.preventDefault();
+  if (!nameInput.value || !scoreInput.value) {
+    return;
+  }
+  try {
+    await _script_js__WEBPACK_IMPORTED_MODULE_1__.addToList({ user: nameInput.value, score: scoreInput.value });
+    nameInput.value = '';
+    scoreInput.value = '';
+  } catch (error) {
+    console.error('Error submitting form:', error);
+  }
+};
+
+const fetchData = async () => {
+  try {
+    const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/8De87jAi3jjs/scores/');
+    const data = await response.json();
+    _script_js__WEBPACK_IMPORTED_MODULE_1__.showScores(data.result);
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
+};
+
+myForm.addEventListener('submit', submitForm);
+refBtn.addEventListener('click', fetchData);
 
 })();
 

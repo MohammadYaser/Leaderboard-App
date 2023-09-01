@@ -1,5 +1,5 @@
 {
-  "name": "to-do-list",
+  "name": "leaderboard",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MohammadYaser/To-do-List.git"
+    "url": "git+https://github.com/MohammadYaser/Leaderboard-App.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MohammadYaser/To-do-List/issues"
+    "url": "https://github.com/MohammadYaser/Leaderboard-App/issues"
   },
-  "homepage": "https://github.com/MohammadYaser/To-do-List#readme",
+  "homepage": "https://github.com/MohammadYaser/Leaderboard-App#readme",
   "devDependencies": {
     "@babel/core": "^7.22.9",
     "@babel/preset-env": "^7.22.9",
