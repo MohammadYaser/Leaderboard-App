@@ -21,7 +21,23 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `.score-list {
+  list-style: none;
+  border: 2px solid black;
+  margin-top: 17px;
+}
+
+.score-list li:nth-child(even) {
+  background-color: rgb(207, 229, 247); /* Red */
+}
+
+footer {
+  border: 2px solid black;
+  position: fixed;
+  bottom: 0.4em;
+  width: 100%;
+  text-align: center;
+}`, "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;EACE,gBAAA;EACA,uBAAA;EACA,gBAAA;AACF;;AAEA;EACE,oCAAA,EAAA,QAAA;AACF;;AAEA;EACE,uBAAA;EACA,eAAA;EACA,aAAA;EACA,WAAA;EACA,kBAAA;AACF","sourcesContent":[".score-list {\n  list-style: none;\n  border: 2px solid black;\n  margin-top: 17px;\n}\n\n.score-list li:nth-child(even) {\n  background-color: rgb(207, 229, 247); /* Red */\n}\n\nfooter {\n  border: 2px solid black;\n  position: fixed;\n  bottom: 0.4em;\n  width: 100%;\n  text-align: center;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
